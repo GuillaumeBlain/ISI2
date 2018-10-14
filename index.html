@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Sébastien Percia et Guillaume Blain" >
+        <meta name="description" content="Short Description of the page contents for SEO purposes" >
+        <title>ISI2RENT - Accueil</title>
+        <link rel="stylesheet" href="style/main.css">
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+                crossorigin="anonymous"></script>
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <div class="mobile-nav" >
+                <div class="menu-btn" id="menu-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav>
+                <ul class="row noshow">
+                    <li class="col-3 col-m-3"><img src="" alt=""></li>
+                    <li class="col-3 col-m-3"><a href="mission.html">Mission</a></li>
+                    <li class="col-3 col-m-3"><a href="catalog.html">Catalogue</a></li>
+                    <li class="col-3 col-m-3"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+        </main>
+            <footer>
+                <p>Crédits &copy;Sébastien Percia et Guillaume Blain</p>
+            </footer>
+            <script>
+                // script pour masquer et afficher le menu mobile
+                $(document).ready(function(){
+                    $('#menu-hamburger').click(function(){
+                        $('nav ul').toggleClass('noshow');
+                    });
+                });
+            </script>
+    </body>
+</html>
