@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /*SYSTEME DE GRILLES********************************************************************************************/
@@ -45,12 +46,12 @@
 /**on aligne les colonnes les unes à côté des autres avec la propriété float**************/
 [class*="col-"] {
     float: left;
-    padding: 0 15px;
+/*padding: 0 15px;*/
 }
 
 /**
-    chaque rangée de colonnes doit être enveloppée dans une div de class "row". on applique un clear:both sur chaque row afin d'annuler l'effet de float
-    et éviter que les éléments suivants remontent et entourent le "row"
+chaque rangée de colonnes doit être enveloppée dans une div de class "row". on applique un clear:both sur chaque row afin d'annuler l'effet de float
+et éviter que les éléments suivants remontent et entourent le "row"
 
 **/
 
@@ -61,25 +62,52 @@
     clear: both;
     display: block;
 }
+body{
+    margin:0;
+}
 
 header, footer{
-    background-color:red;
+    background-color: #fff;
     color:white;
+    border: solid 1px lightgrey;
 }
 
-/*MENU HAMBURGER*/
 
-#menu-hamburger {
+/*Mobile FIRST*/
+
+/**************** HEADER **************/
+
+.logo{
+    height: 60px;
+    border-right: solid 1px lightgrey;
+}
+
+.logo img{
+    height:100%;
+    margin: auto;
+    display: block;
+}
+
+.center-hamburger{
+    margin: auto;
+    width: 50%;
+}
+
+#menu-hamburger{
+    display: block;
+    border-left: solid 1px lightgrey;
+}
+
+#menu-hamburger, .logo {
     padding:10px 0;
 }
-.menu-btn span {
+.menu-btn div span {
     width: 50px;
     height:3px;
     display:block;
-    background-color:#fff;
+    background-color:#000000;
     margin:8px;
 }
-
 
 .noshow{
     display:none;
@@ -94,14 +122,15 @@ nav ul{
 }
 
 nav ul li{
-    border-top:1px solid white;
+    border-top:1px solid lightgrey;
     display:block;
     height:50px;
+    width: 100%;
     line-height:50px;
 }
 
 nav ul li a{
-    color: white;
+    color: black;
     text-decoration:none;
     text-transform:uppercase;
     font-weight:bold;
@@ -111,5 +140,15 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background-color: #e46306;
+    border-left: solid red 3px;
+    background-color: #f5f5f5;
+    color: red;
+    text-shadow: 1px 2px #c5c5c5;
+}
+
+/**************** FOOTER **************/
+
+footer{
+    color:black;
+    text-align: center;
 }
