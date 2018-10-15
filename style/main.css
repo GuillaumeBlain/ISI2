@@ -7,6 +7,11 @@ html{
     scroll-behavior: smooth;
 }
 
+main{
+    width:100%;
+}
+
+
 /*SYSTEME DE GRILLES********************************************************************************************/
 
 /**on divise la largeur de l'écran en 12 colonnes. Chaque colonne occupe un douzième de la page**************/
@@ -288,8 +293,8 @@ hr{
 .slide {
     top: 0;
     opacity: 0;
-    width: 609px;
-    height: 420px;
+    width: 100%;
+    height: auto;
     display: block;
     position: absolute;
     transform: scale(0);
@@ -376,6 +381,12 @@ input:checked + .slide-container  .slide, input:checked + .slide-container  .sli
 }
 
 input:checked + .slide-container .nav label { display: block; }
+
+#fixedbutton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
 
 /**************** FOOTER **************/
 
