@@ -148,12 +148,26 @@ nav ul li a:hover{
 }
 
 /**************** MAIN **************/
+
+/*BANNER ET RECHERCHE*/
+
 #banner{
     height: 300px;
     position: relative;
     background-image: url("../images/banner.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+h1{
+    position: absolute;
+    top: 30px;
+    color: #f53e24;
+    text-align: center;
+    text-shadow: 1px 2px #efefef;
+    text-transform: uppercase;
+    margin: auto;
+    width: 100%;
 }
 
 #search{
@@ -171,7 +185,7 @@ nav ul li a:hover{
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-    top: 200px;
+    top: 150px;
     margin: auto;
     position: relative;
 }
@@ -179,11 +193,64 @@ nav ul li a:hover{
 #search:focus {
     width: 80%;
 }
+
 #search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: grey;
     opacity: 1; /* Firefox */
     font-style: italic;
 }
+
+#lien_fonctionnement{
+    position: relative;
+    width:100%;
+    margin: auto;
+    top: 180px;
+}
+
+#lien_fonctionnement a img{
+    display: block;
+    margin: auto;
+}
+
+#lien_fonctionnement h2{
+    color: #f53e24;
+    text-shadow: 1px 1px #efefef;
+}
+
+/*COMMENT CA MARCHE*/
+
+.div_fonctionnement{
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.icone_fonctionnement{
+    width: 50%;
+    height: 100px;
+    margin: auto;
+}
+
+.icone_fonctionnement img{
+    max-height: 100px;
+    display: block;
+    margin: auto;
+
+}
+
+h2, h3{
+    font-size: 1em;
+    text-align: center;
+}
+.div_fonctionnement p{
+    font-size: 0.80em;
+    text-align: center;
+}
+
+hr{
+    width:50%;
+    border: 1px solid #f1c449;
+}
+
 /**************** FOOTER **************/
 
 .collapsible {
