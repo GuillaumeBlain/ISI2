@@ -3,6 +3,15 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    width:100%;
+}
+
+
 /*SYSTEME DE GRILLES********************************************************************************************/
 
 /**on divise la largeur de l'écran en 12 colonnes. Chaque colonne occupe un douzième de la page**************/
@@ -54,8 +63,6 @@ chaque rangée de colonnes doit être enveloppée dans une div de class "row". o
 et éviter que les éléments suivants remontent et entourent le "row"
 
 **/
-
-
 
 .row:after {
     content: "";
@@ -155,7 +162,7 @@ nav ul li a:hover{
 /*BANNER ET RECHERCHE*/
 
 #banner{
-    height: 300px;
+    height: 400px;
     position: relative;
     background-image: url("../images/banner.jpg");
     background-size: 100% 100%;
@@ -203,6 +210,10 @@ nav ul li a:hover{
     font-style: italic;
 }
 
+#how_it_works{
+    background-color: #f4f4f4;
+}
+
 #lien_fonctionnement{
     position: relative;
     width:100%;
@@ -223,7 +234,7 @@ nav ul li a:hover{
 /*COMMENT CA MARCHE*/
 
 .div_fonctionnement{
-    padding: 30px 20px;
+    padding: 60px 20px;
     width: 100%;
 }
 
@@ -252,6 +263,132 @@ nav ul li a:hover{
 hr{
     width:50%;
     border: 1px solid #f1c449;
+}
+
+/*SLIDER*/
+
+#slider{
+    padding: 60px 20px;
+}
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 550px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide img input{
+    width: 100%;
+    height: 100%;
+}
+.slide-button{
+    opacity: 0;
+    width: 609px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+    bottom:80px;
+    text-align: center;
+}
+
+.slide-button p>span{
+    color: #f53e24;
+    font-size: 1.15em;
+}
+
+.slide-button p{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.slide-button button{
+    font-size: 1em;
+    font-weight: bold;
+    height: 30px;
+    width: 30%;
+    border-radius: 15px;
+    color: #fff;
+    background-color:#f53e24;
+
+}
+
+.nav label {
+    width: 200px;
+    height: 420px;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide, input:checked + .slide-container  .slide-button {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+#fixedbutton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
 }
 
 
@@ -370,8 +507,6 @@ footer div ul li a:hover{
     color: red;
     text-shadow: 1px 2px #c5c5c5;
 }
-
-
 
 #credits{
     color:black;
