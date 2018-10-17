@@ -259,11 +259,11 @@ nav ul li a:hover{
 }
 
 #lien_fonctionnement h2, .div_fonctionnement h3{
-    font-size: 1em;
+    font-size: 1.25em;
     text-align: center;
 }
 .div_fonctionnement p{
-    font-size: 0.80em;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -509,7 +509,7 @@ footer div ul li a{
 
 footer div ul li a:hover{
     border-left: solid red 3px;
-    background-color: #f5f5f5;
+    background-color: #d6d6d6;
     color: red;
     text-shadow: 1px 2px #c5c5c5;
 }
@@ -616,7 +616,7 @@ footer div ul li a:hover{
     #search{
         height: 40px;
         font-size: 16px;
-top: 220px;
+        top: 220px;
     }
 
     #lien_fonctionnement{
@@ -626,9 +626,32 @@ top: 220px;
     #lien_fonctionnement h2{
         font-size: 20px;
     }
+
+    .div_fonctionnement{
+        padding: 90px 40px;
+    }
+
+    .div_fonctionnement p{
+        font-size: 1.25em;
+    }
+
+    .div_fonctionnement h3{
+        font-size: 1.5em;
+    }
+
     /*FOOTER*/
     .collapsible{
         font-size: 18px;
         text-align: center;
     }
+
+    footer div ul li a{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #credits{
+        font-size: 13px;
+    }
+
 }
