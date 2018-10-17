@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Sébastien Percia et Guillaume Blain">
     <meta name="description" content="Short Description of the page contents for SEO purposes">
-    <title>ISI2RENT - Accueil</title>
+    <title>ISI2RENT Location de logement - Accueil</title>
     <link rel="stylesheet" href="style/main.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <script
@@ -40,7 +40,7 @@
     <aside>
 
     </aside>
-    <div id="formulaire">
+    <form action="formulaire.html" id="formulaire">
         <h1>Contactez-nous</h1>
         <div class="champFormulaire">
             <label for="nom">Votre nom</label>
@@ -58,7 +58,32 @@
             <label for="email">Votre E-mail</label>
             <input type="email" id="email" class="inputText">
         </div>
-    </div>
+        <div class="champFormulaire">
+            <label for="canada">Votre pays</label>
+            <input type="radio" name="nationnalite" value="canada" id="canada"> Canada
+            <input type="radio" name="nationnalite" value="autre" id="autre"> Autre :
+            <input list="autreNationnalite">
+            <datalist id="autreNationnalite">
+                <option value="France">
+                <option value="USA">
+                <option value="Espagne">
+                <option value="Allemagne">
+                <option value="Chine">
+                <option value="Inde">
+            </datalist>
+        </div>
+        <div class="champFormulaire">
+            <label>Vous recherchez</label>
+            <div class="checkboxFormulaire"><input type="checkbox" name="typeRecherche" value="maison"> Maison</div>
+            <div class="checkboxFormulaire"><input type="checkbox" name="typeRecherche" value="appartement"> Appartement</div>
+        </div>
+        <div class="champFormulaire">
+            <textarea>
+
+            </textarea>
+        </div>
+        <input type="submit">
+    </form>
 </main>
 <footer>
     <button class="collapsible">+ Service Client</button>
