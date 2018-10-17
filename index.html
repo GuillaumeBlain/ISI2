@@ -17,8 +17,9 @@
     </head>
     <body>
         <header class="row">
-            <div class="col-3 logo"><img src="images/LOGO_SANS_TEXTE.png" alt="logo sans texte isi2rent"></div>
-            <div class="col-6 logo"><img src="images/LOGO_TEXTE.png" alt="logo texte isi2rent"></div>
+            <div class="col-3 logo_mobile"><img src="images/LOGO_SANS_TEXTE.png" alt="logo sans texte isi2rent"></div>
+            <div class="col-6 logo_mobile"><img src="images/LOGO_TEXTE.png" alt="logo texte isi2rent"></div>
+            <div class="col-6 col-m-3 no_show_logo_tablette"><img src="images/img_tablette/logo_tablette.png" alt="logo texte isi2rent"></div>
             <div class="col-3 mobile-nav" >
                 <div class="menu-btn" id="menu-hamburger">
                     <div class="center-hamburger">
@@ -30,9 +31,11 @@
             </div>
             <nav>
                 <ul class="row noshow">
-                    <li class="col-12 "><a href="index.html">Accueil</a></li>
-                    <li class="col-12 "><a href="catalog.html">Catalogue</a></li>
-                    <li class="col-12 "><a href="contact.html">Contact</a></li>
+                    <li class="col-12 col-m-3 no_show_search_header"><input type="text" class="search_header" id="search_header " placeholder="recherche...">
+                    </li>
+                    <li class="col-12 col-m-2 "><a href="index.html">Accueil</a></li>
+                    <li class="col-12 col-m-2"><a href="catalog.html">Catalogue</a></li>
+                    <li class="col-12 col-m-2"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -49,7 +52,7 @@
             </div>
             <div id="how_it_works">
                 <section class="row">
-                    <div class="col-4 div_fonctionnement">
+                    <div class="col-m-4 div_fonctionnement">
                         <div class="icone_fonctionnement">
                             <img src="images/criteres.png" alt="icone criteres">
                         </div>
@@ -57,7 +60,7 @@
                         <p>Trouvez votre logement à louer dans le quartier de votre choix avec la recherche rapide et géolocalisée. Accédez aux détails de l'appartement et visitez le quartier en quelques clics.</p>
                     </div>
                     <hr>
-                    <div class="col-4 div_fonctionnement">
+                    <div class="col-m-4 div_fonctionnement">
                         <div class="icone_fonctionnement">
                             <img src="images/communication.png" alt="icone criteres">
                         </div>
@@ -65,7 +68,7 @@
                         <p>Toutes vos annonces préférées d'appartements au même endroit ! Trier, sauvegarder et partager vos coups de coeur. Bénéficiez aussi d’informations pour vous aider dans vos projets de recherche de la location de vos rêves.</p>
                     </div>
                     <hr>
-                    <div class="col-4 div_fonctionnement">
+                    <div class="col-m-4 div_fonctionnement">
                         <div class="icone_fonctionnement">
                             <img src="images/criteres.png" alt="icone criteres">
                         </div>
@@ -197,7 +200,7 @@
                 <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/linkedin.png" alt=""></a></div>
                 <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/youtube.png" alt=""></a></div>
             </div>
-            <p id="credits">&copy;Sébastien Percia et Guillaume Blain</p>
+            <p id="credits">&copy;Sébastien Percia et Guillaume Blain 2018 - Tous droits réservés</p>
         </footer>
         <script>
             // script pour masquer et afficher le menu mobile

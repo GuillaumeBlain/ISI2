@@ -71,6 +71,7 @@ et éviter que les éléments suivants remontent et entourent le "row"
 }
 body{
     margin:0;
+    position:relative;
 }
 
 header, footer{
@@ -79,20 +80,25 @@ header, footer{
     border: solid 1px lightgrey;
 }
 
-aside{
-    display: none;
+header{
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
+/******************************************************************** INDEX **********************************************************************/
 
-/*Mobile FIRST*/
+/*********************************Mobile FIRST**************************************/
 
 /**************** HEADER **************/
 
-.logo{
+.logo_mobile{
     height: 60px;
     border-right: solid 1px lightgrey;
 }
 
-.logo img{
+.logo_mobile img{
     height:100%;
     margin: auto;
     display: block;
@@ -108,7 +114,7 @@ aside{
     border-left: solid 1px lightgrey;
 }
 
-#menu-hamburger, .logo {
+#menu-hamburger, .logo_mobile {
     padding:10px 0;
 }
 .menu-btn div span {
@@ -119,7 +125,7 @@ aside{
     margin:8px;
 }
 
-.noshow{
+.noshow, .no_show_logo_tablette, .no_show_search_header{
     display:none;
 }
 
@@ -162,6 +168,7 @@ nav ul li a:hover{
 /*BANNER ET RECHERCHE*/
 
 #banner{
+    margin-top: 62px;
     height: 350px;
     position: relative;
     background-image: url("../images/banner.jpg");
@@ -274,7 +281,7 @@ hr{
 .slides {
     padding: 0;
     width: 609px;
-    height: 550px;
+    height: 450px;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -462,7 +469,6 @@ input:checked + .slide-container .nav label { display: block; }
     height: auto;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .social_media{
@@ -511,5 +517,118 @@ footer div ul li a:hover{
 #credits{
     color:black;
     text-align: center;
-    font-size: 9px;
+    font-size: 10px;
+}
+
+
+/********************************************************************FORMAT TABLETTE**********************************************************************/
+
+@media (min-width: 768px){
+    #menu-hamburger{
+        display: none;
+    }
+
+    .noshow{
+        display:block;
+    }
+    /*largeur d'1 colonne*/
+    .col-m-1 {width: 8.33%;}
+
+    /*largeur de 2 colonnes*/
+    .col-m-2 {width: 16.66%;}
+
+    /*largeur de 3 colonnes*/
+    .col-m-3 {width: 25%;}
+
+    /*largeur de 4 colonnes*/
+    .col-m-4 {width: 33.33%;}
+
+    .logo_mobile{
+        display: none;
+    }
+
+    .no_show_logo_tablette{
+        display: block;
+        height: 60px;
+        border: none;
+    }
+
+    .no_show_logo_tablette img{
+        height:100%;
+        margin: auto;
+        display: block;
+    }
+
+    .no_show_search_header{
+        display: block;
+        border: none;
+    }
+
+    .search_header{
+        width:70%;
+        height: 17px;
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 14px;
+        color: #000000;
+        font-size: 14px;
+        background-color: #fff;
+        background-image: url("../images/search1.png");
+        background-position: 10px 5px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        margin: auto auto;
+    }
+
+    nav ul li:first-of-type{
+        display: flex;
+    }
+    nav ul li{
+        text-align: center;
+        line-height: 60px;
+        padding: 0;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+    /*MAIN*/
+    #banner{
+        height: 450px;
+    }
+
+    .div_fonctionnement{
+    }
+
+    hr{
+        /*width: 1px;*/
+        /*height: 200px;*/
+        /*margin: 0;*/
+        display: none;
+    }
+
+    #banner h1{
+        font-size: 45px;
+        padding: 0 20px;
+        top: 60px;
+    }
+
+    #search{
+        height: 40px;
+        font-size: 16px;
+top: 220px;
+    }
+
+    #lien_fonctionnement{
+        top:300px;
+    }
+
+    #lien_fonctionnement h2{
+        font-size: 20px;
+    }
+    /*FOOTER*/
+    .collapsible{
+        font-size: 18px;
+        text-align: center;
+    }
 }
