@@ -17,8 +17,10 @@
 </head>
 <body>
 <header class="row">
-    <div class="col-3 logo"><img src="images/LOGO_SANS_TEXTE.png" alt="logo sans texte isi2rent"></div>
-    <div class="col-6 logo"><img src="images/LOGO_TEXTE.png" alt="logo texte isi2rent"></div>
+    <div class="col-3 logo_mobile"><img src="images/LOGO_SANS_TEXTE.png" alt="logo sans texte isi2rent"></div>
+    <div class="col-6 logo_mobile"><img src="images/LOGO_TEXTE.png" alt="logo texte isi2rent"></div>
+    <div class="col-6 col-m-3 no_show_logo_tablette"><img src="images/img_tablette/logo_tablette.png"
+                                                          alt="logo texte isi2rent"></div>
     <div class="col-3 mobile-nav">
         <div class="menu-btn" id="menu-hamburger">
             <div class="center-hamburger">
@@ -30,9 +32,12 @@
     </div>
     <nav>
         <ul class="row noshow">
-            <li class="col-12 "><a href="index.html">Accueil</a></li>
-            <li class="col-12 "><a href="catalog.html">Catalogue</a></li>
-            <li class="col-12 "><a href="contact.html">Contact</a></li>
+            <li class="col-12 col-m-3 no_show_search_header"><input type="text" class="search_header"
+                                                                    id="search_header " placeholder="recherche...">
+            </li>
+            <li class="col-12 col-m-2 "><a href="index.html">Accueil</a></li>
+            <li class="col-12 col-m-2"><a href="catalog.html">Catalogue</a></li>
+            <li class="col-12 col-m-2"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -43,76 +48,126 @@
     <form action="formulaire.html" id="formulaire">
         <h1>Contactez-nous</h1>
         <div class="champFormulaire">
-            <label for="nom">Votre nom</label>
+            <label class="titreChampFormulaire" for="nom">Votre nom</label>
             <input type="text" id="nom" class="inputText">
         </div>
         <div class="champFormulaire">
-            <label for="prenom">Votre prénom</label>
+            <label class="titreChampFormulaire" for="prenom">Votre prénom</label>
             <input type="text" id="prenom" class="inputText">
         </div>
         <div class="champFormulaire">
-            <label for="tel">Votre téléphone</label>
+            <label class="titreChampFormulaire" for="tel">Votre téléphone</label>
             <input type="tel" id="tel" class="inputText">
         </div>
         <div class="champFormulaire">
-            <label for="email">Votre E-mail</label>
+            <label class="titreChampFormulaire" for="email">Votre E-mail</label>
             <input type="email" id="email" class="inputText">
         </div>
         <div class="champFormulaire">
-            <label for="canada">Votre pays</label>
-            <input type="radio" name="nationnalite" value="canada" id="canada"> Canada
-            <input type="radio" name="nationnalite" value="autre" id="autre"> Autre :
-            <input list="autreNationnalite">
-            <datalist id="autreNationnalite">
-                <option value="France">
-                <option value="USA">
-                <option value="Espagne">
-                <option value="Allemagne">
-                <option value="Chine">
-                <option value="Inde">
-            </datalist>
+            <label class="titreChampFormulaire" for="canada">Votre pays</label>
+            <div class="conteneurNationnalite">
+                <div><input type="radio" name="nationnalite" value="canada" id="canada"><label for="canada" class="radioLabel">Canada</label>
+                </div>
+                <div><input type="radio" name="nationnalite" value="autre" id="autre"><label for="autre" class="radioLabel">Autre</label>
+                    <input list="autreNationnalite">
+                    <datalist id="autreNationnalite">
+                        <option value="France">
+                        <option value="USA">
+                        <option value="Espagne">
+                        <option value="Allemagne">
+                        <option value="Chine">
+                        <option value="Inde">
+                    </datalist>
+                </div>
+            </div>
         </div>
         <div class="champFormulaire">
-            <label>Vous recherchez</label>
-            <div class="checkboxFormulaire"><input type="checkbox" name="typeRecherche" value="maison"> Maison</div>
-            <div class="checkboxFormulaire"><input type="checkbox" name="typeRecherche" value="appartement"> Appartement</div>
+            <label class="titreChampFormulaire">Vous recherchez</label>
+            <div class="conteneurNationnalite">
+            <div class="checkboxFormulaire"><input type="checkbox" name="typeRecherche" value="maison"><label class="checkboxLabel">Maison</label></div>
+            <div class="checkboxFormulaire"><input type="checkbox" name="typeRecherche" value="appartement"><label class="checkboxLabel">Appartement</label>
+            </div>
+            </div>
         </div>
         <div class="champFormulaire">
-            <textarea>
+            <label class="titreChampFormulaire">Votre requête</label>
+            <textarea col="30" row="4">
 
             </textarea>
         </div>
-        <input type="submit">
+        <input type="submit" id="soumettre">
     </form>
 </main>
 <footer>
-    <button class="collapsible">+ Service Client</button>
-    <div class="content">
-        <ul>
-            <li><a href="#">Gift Cards</a></li>
-            <li><a href="#">Statut de la commande</a></li>
-            <li><a href="#">Shipping</a></li>
-            <li><a href="#">Retour et échange</a></li>
-        </ul>
+    <div id="footer_mobile_tablette">
+        <button class="collapsible">+ Service Client</button>
+        <div class="content">
+            <ul>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Statut de la commande</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Retour et échange</a></li>
+            </ul>
+        </div>
+        <button class="collapsible">+ A propos de nous</button>
+        <div class="content">
+            <ul>
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Termes et conditions</a></li>
+                <li><a href="#">Plan du site</a></li>
+            </ul>
+        </div>
+        <button class="collapsible">+ Nous suivre</button>
+        <div class="row content">
+            <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/facebook.png" alt=""></a></div>
+            <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/instagram.png" alt=""></a>
+            </div>
+            <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/twitter.png" alt=""></a></div>
+            <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/linkedin.png" alt=""></a></div>
+            <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/youtube.png" alt=""></a></div>
+        </div>
     </div>
-    <button class="collapsible">+ A propos de nous</button>
-    <div class="content">
-        <ul>
-            <li><a href="#">Nous contacter</a></li>
-            <li><a href="#">Politique de confidentialité</a></li>
-            <li><a href="#">Termes et conditions</a></li>
-            <li><a href="#">Plan du site</a></li>
-        </ul>
+    <div class="row footer_desktop">
+        <div class="col-lg-4 container_footer">
+            <h4>Service Client</h4>
+            <div>
+                <ul>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Statut de la commande</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Retour et échange</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4 container_footer">
+            <h4>A propos de nous</h4>
+            <div>
+                <ul>
+                    <li><a href="#">Nous contacter</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Termes et conditions</a></li>
+                    <li><a href="#">Plan du site</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4 container_footer">
+            <h4>Suivez nous</h4>
+            <div class="row">
+                <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/facebook.png" alt=""></a>
+                </div>
+                <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/instagram.png" alt=""></a>
+                </div>
+                <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/twitter.png" alt=""></a>
+                </div>
+                <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/linkedin.png" alt=""></a>
+                </div>
+                <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/youtube.png" alt=""></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <button class="collapsible">+ Nous suivre</button>
-    <div class="row content">
-        <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/facebook.png" alt=""></a></div>
-        <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/instagram.png" alt=""></a></div>
-        <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/twitter.png" alt=""></a></div>
-        <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/linkedin.png" alt=""></a></div>
-        <div class="col-2 social_media"><a href="#"><img src="images/reseaux_sociaux/youtube.png" alt=""></a></div>
-    </div>
-    <p id="credits">&copy;Sébastien Percia et Guillaume Blain</p>
+    <p id="credits">&copy;2018 Sébastien Percia et Guillaume Blain - Tous droits réservés</p>
 </footer>
 <script>
     // script pour masquer et afficher le menu mobile
