@@ -498,10 +498,13 @@ input[type=checkbox] {
     flex-wrap: nowrap;
 }
 
-textarea{
+#requeteClient{
     width:100%;
     height: 200px;
     resize: none;
+    border-radius: 20px;
+    border: 1px solid #f53e24;
+    box-shadow: 2px 2px 5px #f53e24;
 }
 
 #soumettre{
@@ -521,6 +524,8 @@ textarea{
 #map-contact{
     filter: grayscale(100%);
     height: 400px;
+    width: 100%;
+    padding:0;
 }
 
 /**************** FOOTER **************/
@@ -753,6 +758,16 @@ footer #footer_mobile_tablette div ul li a:hover{
         padding-left: 10%;
     }
 
+    .inputText {
+        width: 100%;
+        height: 40px;
+        font-size: 18px;
+        margin: auto;
+        display: block;
+        border-radius: 20px;
+        border: 1px solid #f53e24;
+        box-shadow: 2px 2px 5px #f53e24;
+    }
 
     /*FOOTER*/
     .collapsible{
@@ -856,5 +871,14 @@ footer #footer_mobile_tablette div ul li a:hover{
         padding:10px 40px;
         border-right: 1px solid white;
     }
-    
+
+    /****************FORMULAIRE*****************/
+    .formGauche{
+        padding-right:10%;
+    }
+
+    #map-contact{
+        height: 420px;
+        padding-right: 40px;
+    }
 }
