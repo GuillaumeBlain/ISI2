@@ -434,12 +434,28 @@ input:checked + .slide-container .nav label { display: block; }
     font-size: 40px;
 }
 
-.champFormulaire{
+.formGauche{
     margin-bottom: 30px;
+    opacity: 0;
+    animation: anim 1s linear forwards;
+}
+
+.formDroit{
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: anim 2s linear forwards;
 }
 
 .area{
-    padding:0;
+    padding:0 0 30px;
+    opacity: 0;
+    animation: anim 3s linear forwards;
+}
+
+@keyframes anim {
+    0%  {opacity:0;}
+    50%{opacity:0;}
+    100% {opacity:1;}
 }
 
 .champFormulaire p{
@@ -496,6 +512,10 @@ input[type=checkbox] {
     flex:1;
     display:flex;
     flex-wrap: nowrap;
+}
+
+.datalistPays{
+    width:40px;
 }
 
 #requeteClient{
@@ -767,6 +787,8 @@ footer #footer_mobile_tablette div ul li a:hover{
         box-shadow: 2px 2px 5px #f53e24;
     }
 
+
+
     /*FOOTER*/
     .collapsible{
         font-size: 18px;
@@ -878,5 +900,13 @@ footer #footer_mobile_tablette div ul li a:hover{
     #map-contact{
         height: 420px;
         padding-right: 40px;
+    }
+
+    .datalistPays{
+        width:auto;
+    }
+
+    .inputText:focus{
+        background-color: rgba(245,62,36,0.2);
     }
 }
