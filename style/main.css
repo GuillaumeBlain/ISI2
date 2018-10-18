@@ -549,6 +549,21 @@ input[type=checkbox] {
     padding:0;
 }
 
+
+/*****************CATALOGUE*****************/
+
+
+.voir-produit{
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding:10px;
+    border-radius: 15px;
+    color: #fff;
+    background-color:#f53e24;
+}
+
+
 /**************** FOOTER **************/
 
 .collapsible {
