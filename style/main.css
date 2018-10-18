@@ -276,16 +276,17 @@ hr{
 
 #slider{
     padding: 60px 20px;
-
+    height: 100%;
 }
 
 .slides {
     padding: 0;
     width: 100%;
-    height: 600px;
     display: block;
     margin: 0 auto;
     position: relative;
+    min-width: 350px;
+    max-width: 1000px;
 }
 
 .slides * {
@@ -323,14 +324,14 @@ hr{
 }
 .slide-button{
     opacity: 0;
-    width: 609px;
+    width: 100%;
     height: 40px;
     display: block;
     position: absolute;
     transform: scale(0);
     transition: all .7s ease-in-out;
-    bottom:80px;
     text-align: center;
+    padding-top: 55%;
 }
 
 .slide-button p>span{
@@ -354,6 +355,10 @@ hr{
     color: #fff;
     background-color:#f53e24;
 
+}
+
+.container_slider_aside{
+    height:800px;
 }
 
 .nav label {
@@ -555,8 +560,11 @@ textarea{
     width: 100%;
 }
 
+footer #footer_mobile_tablette{
+    border: none;
 
-footer #footer_mobile_tabletter div ul{
+}
+footer #footer_mobile_tablette div ul{
     list-style:none;
     padding:0;
     color: white;
@@ -564,13 +572,13 @@ footer #footer_mobile_tabletter div ul{
     margin:0;
 }
 
-footer #footer_mobile_tabletter div ul li{
+footer #footer_mobile_tablette div ul li{
     border-top:1px solid lightgrey;
     display:block;
     width: 100%;
 }
 
-footer #footer_mobile_tabletter div ul li a{
+footer #footer_mobile_tablette div ul li a{
     color: black;
     text-decoration:none;
     text-transform:uppercase;
@@ -581,7 +589,7 @@ footer #footer_mobile_tabletter div ul li a{
     font-size: 12px;
 }
 
-footer #footer_mobile_tabletter div ul li a:hover{
+footer #footer_mobile_tablette div ul li a:hover{
     border-left: solid red 3px;
     background-color: #d6d6d6;
     color: red;
@@ -689,9 +697,10 @@ footer #footer_mobile_tabletter div ul li a:hover{
     nav ul li a{
         font-size: 16px;
     }
+
     /*MAIN*/
     #banner{
-        height: 450px;
+        height: 95vh;
     }
 
     .div_fonctionnement{
