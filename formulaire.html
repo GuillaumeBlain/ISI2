@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sébastien Percia et Guillaume Blain">
     <meta name="description" content="Short Description of the page contents for SEO purposes">
     <title>ISI2RENT Location de logement - Accueil</title>
@@ -42,65 +43,81 @@
     </nav>
 </header>
 <main>
-    <aside>
-
-    </aside>
-    <form action="formulaire.html" id="formulaire">
-        <h1>Contactez-nous</h1>
-        <div class="champFormulaire">
-            <label class="titreChampFormulaire" for="nom">Votre nom*</label>
-            <input type="text" id="nom" class="inputText" required="required" placeholder="Entrez votre nom" pattern="^[a-zA-Z]+$">
+    <div class="row">
+        <h1 id="titreContact">Contactez-nous</h1>
+    <form action="formulaire.html" id="formulaire" class="row col-12 col-lg-8">
+        <div class="formGauche row col-m-6 col-lg-4">
+            <div class="champFormulaire col-12">
+                <label class="titreChampFormulaire" for="nom">Votre nom*</label>
+                <input type="text" id="nom" class="inputText" required="required" placeholder="Entrez votre nom"
+                       pattern="^[a-zA-Z]+$">
+            </div>
+            <div class="champFormulaire col-12">
+                <label class="titreChampFormulaire" for="prenom">Votre prénom*</label>
+                <input type="text" id="prenom" class="inputText" required="required" placeholder="Entrez votre prénom"
+                       pattern="^[a-zA-Z]+$">
+            </div>
+            <div class="champFormulaire col-12">
+                <label class="titreChampFormulaire" for="tel">Votre téléphone*</label>
+                <input type="tel" id="tel" class="inputText" required="required" placeholder="Votre numéro de téléphone"
+                       pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+            </div>
+            <div class="champFormulaire col-12">
+                <label class="titreChampFormulaire" for="email">Votre E-mail*</label>
+                <input type="email" id="email" class="inputText" required="required" placeholder="example@example.com">
+            </div>
         </div>
-        <div class="champFormulaire">
-            <label class="titreChampFormulaire" for="prenom">Votre prénom*</label>
-            <input type="text" id="prenom" class="inputText" required="required" placeholder="Entrez votre prénom" pattern="^[a-zA-Z]+$">
-        </div>
-        <div class="champFormulaire">
-            <label class="titreChampFormulaire" for="tel">Votre téléphone*</label>
-            <input type="tel" id="tel" class="inputText" required="required" placeholder="Votre numéro de téléphone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-        </div>
-        <div class="champFormulaire">
-            <label class="titreChampFormulaire" for="email">Votre E-mail*</label>
-            <input type="email" id="email" class="inputText" required="required" placeholder="example@example.com">
-        </div>
-        <div class="champFormulaire">
-            <label class="titreChampFormulaire" for="seuil">Votre seuil maximum</label>
-            <input type="number" min="0" id="seuil" class="inputText" placeholder="en $">
-        </div>
-        <div class="champFormulaire">
-            <label class="titreChampFormulaire" for="canada">Votre pays</label>
-            <div class="conteneurNationnalite">
-                <div><input type="radio" name="nationnalite" value="canada" id="canada"><label for="canada" class="radioLabel">Canada</label>
+        <div class="formDroit row col-m-6 col-lg-4">
+            <div class="champFormulaire col-12">
+                <label class="titreChampFormulaire" for="seuil">Votre seuil maximum</label>
+                <input type="number" min="0" id="seuil" class="inputText" placeholder="en $">
+            </div>
+            <div class="champFormulaire col-12">
+                <label class="titreChampFormulaire" for="canada">Votre pays</label>
+                <div class="conteneurNationnalite">
+                    <div><input type="radio" name="nationnalite" value="canada" id="canada"><label for="canada"
+                                                                                                   class="radioLabel">Canada</label>
+                    </div>
+                    <div><input type="radio" name="nationnalite" value="autre" id="autre"><label for="autre"
+                                                                                                 class="radioLabel">Autre</label>
+                        <input list="autreNationnalite">
+                        <datalist id="autreNationnalite">
+                            <option value="France">
+                            <option value="USA">
+                            <option value="Espagne">
+                            <option value="Allemagne">
+                            <option value="Chine">
+                            <option value="Inde">
+                        </datalist>
+                    </div>
                 </div>
-                <div><input type="radio" name="nationnalite" value="autre" id="autre"><label for="autre" class="radioLabel">Autre</label>
-                    <input list="autreNationnalite">
-                    <datalist id="autreNationnalite">
-                        <option value="France">
-                        <option value="USA">
-                        <option value="Espagne">
-                        <option value="Allemagne">
-                        <option value="Chine">
-                        <option value="Inde">
-                    </datalist>
+            </div>
+            <div class="champFormulaire col-12">
+                <label class="titreChampFormulaire">Vous recherchez</label>
+                <div class="conteneurNationnalite">
+                    <div class="checkboxFormulaire"><input type="checkbox" name="typeRecherche" value="maison"><label
+                            class="checkboxLabel">Maison</label></div>
+                    <div class="checkboxFormulaire"><input type="checkbox" name="typeRecherche"
+                                                           value="appartement"><label
+                            class="checkboxLabel">Appartement</label>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="champFormulaire">
-            <label class="titreChampFormulaire">Vous recherchez</label>
-            <div class="conteneurNationnalite">
-            <div class="checkboxFormulaire"><input type="checkbox" name="typeRecherche" value="maison"><label class="checkboxLabel">Maison</label></div>
-            <div class="checkboxFormulaire"><input type="checkbox" name="typeRecherche" value="appartement"><label class="checkboxLabel">Appartement</label>
-            </div>
-            </div>
-        </div>
-        <div class="champFormulaire">
-            <label class="titreChampFormulaire">Votre requête</label>
-            <textarea col="30" row="4">
+            <div class="champFormulaire area col-12">
+                <label class="titreChampFormulaire">Votre requête</label>
+                <textarea col="30" row="4">
 
             </textarea>
+            </div>
+        <div class="col-12">
+            <input type="submit" id="soumettre">
         </div>
-        <input type="submit" id="soumettre">
     </form>
+    <aside>
+        <iframe class="col-12 col-lg-4" id="map-contact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.3025566276087!2d-73.64289478459393!3d45.54423883612036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc918e0c061b07f%3A0x647a6b6d7cb681a7!2sISI%2C+l&#39;Institut+sup%C3%A9rieur+d&#39;informatique!5e0!3m2!1sfr!2sca!4v1509327999271" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </aside>
+    </div>
 </main>
 <footer>
     <div id="footer_mobile_tablette">

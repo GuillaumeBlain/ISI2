@@ -408,7 +408,7 @@ input:checked + .slide-container .nav label { display: block; }
     width: 100%;
 }
 
-aside{
+#asideIndex{
     margin: 20px 0;
     padding: 40px 40px;
 }
@@ -416,23 +416,25 @@ aside{
 /**************** FORMULAIRE **************/
 
 #formulaire{
-    padding: 30px 20px;
+    padding: 30px 5%;
 }
 
-#formulaire>h1{
-    padding-bottom: 50px;
+#titreContact{
+    padding-bottom: 30px;
     color: #f53e24;
     text-align: center;
     text-shadow: 1px 2px #000000;
-    margin: auto;
+    margin: 80px auto auto auto;
     width: 100%;
     font-size: 40px;
 }
 
 .champFormulaire{
     margin-bottom: 30px;
-    padding-left:10%;
-    padding-right:10%;
+}
+
+.area{
+    padding:0;
 }
 
 .champFormulaire p{
@@ -509,6 +511,11 @@ textarea{
     margin: auto;
     width: 100px;
     border-radius: 20px;
+}
+
+#map-contact{
+    filter: grayscale(100%);
+    height: 400px;
 }
 
 /**************** FOOTER **************/
@@ -598,7 +605,6 @@ footer #footer_mobile_tabletter div ul li a:hover{
     .noshow{
         display:block;
     }
-    /*largeur d'1 colonne*/
     .col-m-1 {width: 8.33%;}
 
     /*largeur de 2 colonnes*/
@@ -610,8 +616,29 @@ footer #footer_mobile_tabletter div ul li a:hover{
     /*largeur de 4 colonnes*/
     .col-m-4 {width: 33.33%;}
 
+    /*largeur de 5 colonnes*/
+    .col-m-5 {width: 41.66%;}
+
+    /*largeur de 6 colonnes*/
+    .col-m-6 {width: 50%;}
+
     /*largeur de 7 colonnes*/
     .col-m-7 {width: 58.33%;}
+
+    /*largeur de 8 colonnes*/
+    .col-m-8 {width: 66.66%;}
+
+    /*largeur de 9 colonnes*/
+    .col-m-9 {width: 75%;}
+
+    /*largeur de 10 colonnes*/
+    .col-m-10 {width: 83.33%;}
+
+    /*largeur de 11 colonnes*/
+    .col-m-11 {width: 91.66%;}
+
+    /*largeur de 12 colonnes*/
+    .col-m-12 {width: 100%;}
 
     .logo_mobile{
         display: none;
@@ -677,7 +704,7 @@ footer #footer_mobile_tabletter div ul li a:hover{
         display: none;
     }
 
-    #banner h1{
+    #titreIndex{
         font-size: 45px;
         padding: 0 20px;
         top: 60px;
@@ -708,6 +735,15 @@ footer #footer_mobile_tabletter div ul li a:hover{
     .div_fonctionnement h3{
         font-size: 1.5em;
     }
+
+    /**************FORMULAIRE*************/
+    .formGauche{
+        padding-right: 10%;
+    }
+    .formDroit{
+        padding-left: 10%;
+    }
+
 
     /*FOOTER*/
     .collapsible{
@@ -765,10 +801,42 @@ footer #footer_mobile_tabletter div ul li a:hover{
 
     }
 
+    /*largeur d'1 colonne*/
     .col-lg-1 {width: 8.33%;}
+
+    /*largeur de 2 colonnes*/
+    .col-lg-2 {width: 16.66%;}
+
+    /*largeur de 3 colonnes*/
+    .col-lg-3 {width: 25%;}
+
+    /*largeur de 4 colonnes*/
     .col-lg-4 {width: 33.33%;}
+
+    /*largeur de 5 colonnes*/
+    .col-lg-5 {width: 41.66%;}
+
+    /*largeur de 6 colonnes*/
+    .col-lg-6 {width: 50%;}
+
+    /*largeur de 7 colonnes*/
     .col-lg-7 {width: 58.33%;}
+
+    /*largeur de 8 colonnes*/
     .col-lg-8 {width: 66.66%;}
+
+    /*largeur de 9 colonnes*/
+    .col-lg-9 {width: 75%;}
+
+    /*largeur de 10 colonnes*/
+    .col-lg-10 {width: 83.33%;}
+
+    /*largeur de 11 colonnes*/
+    .col-lg-11 {width: 91.66%;}
+
+    /*largeur de 12 colonnes*/
+    .col-lg-12 {width: 100%;}
+
 
     h4{
         text-align: center;
