@@ -563,6 +563,67 @@ input[type=checkbox] {
     background-color:#f53e24;
 }
 
+#appartements{
+    margin:10%;
+    display: none;
+}
+
+#appartements:target{
+    display:block;
+    animation: opacityOn 2s;
+}
+
+#maisons{
+    margin:10%;
+    display: none;
+}
+@keyframes opacityOn {
+    0%  {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity:1;}
+}
+
+
+#maisons:target{
+    display:block;
+    animation: opacityOn 2s;
+}
+
+.div-produit{
+    padding: 30px;
+    margin-bottom: 50px;
+    border:2px solid #f53e24;
+    box-shadow: 4px 4px 6px #f53e24;
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+
+.div-produit:hover{
+
+}
+
+.img-produit-catalogue{
+    width:100%;
+    height:auto;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 6px black;
+}
+
+.description-prod-catalogue{
+    text-align: center;
+}
+
+
+.description-prod-catalogue h3{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0;
+    color: black;
+}
+.voir-produit{
+}
 
 /**************** FOOTER **************/
 
@@ -805,6 +866,8 @@ footer #footer_mobile_tablette div ul li a:hover{
         border: 1px solid #f53e24;
         box-shadow: 2px 2px 5px #f53e24;
     }
+
+    /*************CATALOGUE*************/
 
 
 
