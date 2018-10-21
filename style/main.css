@@ -660,7 +660,7 @@ input[type=checkbox] {
 }
 
 .thumbnails img {
-    width: 30vmin;
+    width: 20vmin;
     height: 20vmin;
     object-fit: cover;
     object-position: top;
