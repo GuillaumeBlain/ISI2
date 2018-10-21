@@ -190,7 +190,7 @@ nav ul li a:hover{
 #search{
     height: 30px;
     display: block;
-    width: 30%;
+    width: 40%;
     border: 1px solid #ccc;
     border-radius: 15px;
     color: #000000;
@@ -276,7 +276,7 @@ hr{
 
 #slider{
     padding: 60px 20px;
-    height: 75%;
+    height: 60%;
 }
 
 .slides {
@@ -350,7 +350,7 @@ hr{
     font-size: 1em;
     font-weight: bold;
     height: 30px;
-    width: 30%;
+    width: 40%;
     border-radius: 15px;
     color: #fff;
     background-color:#f53e24;
@@ -625,6 +625,106 @@ input[type=checkbox] {
 .voir-produit{
 }
 
+
+/**************** PAGE PRODUIT **************/
+
+
+/*SLIDER PRODUITS*/
+
+
+.container_pdt {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    padding:0;
+    list-style:none;
+    position: relative;
+
+}
+.thumbnails ul li {
+    flex: auto;
+}
+
+.thumbnails a {
+    display: block;
+}
+
+.thumbnails img {
+    width: 30vmin;
+    height: 20vmin;
+    object-fit: cover;
+    object-position: top;
+}
+
+.thumbnails img:nth-child(1) {
+    z-index: 5;
+}
+.thumbnails img:nth-child(2) {
+    z-index: 4;
+}
+.thumbnails img:nth-child(3) {
+    z-index: 3;
+}
+
+.slides_pdt {
+    overflow: hidden;
+    width: 86vmin;
+    height: 60vmin;
+    list-style:none;
+    position: relative;
+    padding: 0;
+}
+
+.slides_pdt li {
+    width: 80vmin;
+    height: 60vmin;
+    position: absolute;
+    z-index: 1;
+    list-style:none;
+    top: 0;
+}
+
+.slides_pdt img {
+    width: 100%;
+    height: 60vmin;
+    object-fit: cover;
+    object-position: top;
+}
+
+.slides_pdt li:target {
+    z-index: 6;
+    -webkit-animation: slide_pdt 1s 1;
+}
+
+.slides_pdt li:not(:target) {
+    -webkit-animation: hidden_imgPdt 1s 1;
+}
+
+@keyframes slide_pdt {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes hidden_imgPdt {
+    0% {
+        z-index: 2;
+    }
+    100% {
+        z-index: 2;
+    }
+}
+
+
 /**************** FOOTER **************/
 
 .collapsible {
@@ -877,7 +977,7 @@ footer #footer_mobile_tablette div ul li a:hover{
         text-align: center;
     }
 
-    footer #footer_mobile_tabletter div ul li a{
+    footer #footer_mobile_tablette div ul li a{
         text-align: center;
         font-size: 14px;
     }
