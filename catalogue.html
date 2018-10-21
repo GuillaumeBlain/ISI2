@@ -12,7 +12,7 @@
     <meta property="og:type" content="Location immobilier">
     <meta property="og:description" content="Location immobilier appartements maison à Montréal principalement">
     <meta property="og:locale" content="fr_CA">
-    <title>ISI2RENT - Accueil</title>
+    <title>ISI2RENT Location de logement - Catalogue</title>
     <link rel="stylesheet" href="style/main.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <script
@@ -25,9 +25,11 @@
 </head>
 <body>
 <header class="row">
-    <div class="col-3 logo_mobile"><a href="index.html"><img src="images/LOGO_SANS_TEXTE.png" alt="logo sans texte isi2rent"></a> </div>
+    <div class="col-3 logo_mobile"><a href="index.html"><img src="images/LOGO_SANS_TEXTE.png"
+                                                             alt="logo sans texte isi2rent"></a></div>
     <div class="col-6 logo_mobile"><img src="images/LOGO_TEXTE.png" alt="logo texte isi2rent"></div>
-    <div class="col-6 col-m-3 no_show_logo_tablette"><a href="index.html"><img src="images/img_tablette/logo_tablette.png" alt="logo texte isi2rent"></a> </div>
+    <div class="col-6 col-m-3 no_show_logo_tablette"><a href="index.html"><img
+            src="images/img_tablette/logo_tablette.png" alt="logo texte isi2rent"></a></div>
     <div class="col-3 mobile-nav">
         <div class="menu-btn" id="menu-hamburger">
             <div class="center-hamburger">
@@ -37,90 +39,151 @@
             </div>
         </div>
     </div>
-    <nav>
+    <nav id="menu-principal">
         <ul class="row noshow">
             <li class="col-12 col-m-3 no_show_search_header"><input type="text" class="search_header"
                                                                     id="search_header " placeholder="recherche...">
             </li>
             <li class="col-12 col-m-2 "><a href="index.html">Accueil</a></li>
-            <li class="col-12 col-m-2"><a href="catalog.html">Catalogue</a></li>
-            <li class="col-12 col-m-2"><a href="contact.html">Contact</a></li>
+            <li class="col-12 col-m-2"><a href="catalogue.html#appartements">Catalogue</a></li>
+            <li class="col-12 col-m-2"><a href="formulaire.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <div class="row">
         <h1 id="titreContact">Catalogue</h1>
-        <section name="tri" class="col-4">
+        <section name="tri" id="tri" class="col-12 col-lg-9">
             <ul>
-                <a href="#appartements"><li>Appartements</li></a>
-                <a href="#maisons"><li>Maisons</li></a>
+                <li><a href="catalogue.html#appartements">
+                    Appartements
+                </a>
+                </li>
+                <li>
+                    <a href="#maisons">
+                        Maisons
+                    </a>
+                </li>
             </ul>
         </section>
-        <section name="appartements" class="row" id="appartements">
-            <div class="div-produit row col-m-6 col-lg-4">
-                <div class="col-12 ">
-                    <img src="images/appartements/appartement_1.jpg" alt="" class="img-produit-catalogue">
-                </div>
-                <div class="col-12 description-prod-catalogue">
-                    <p class="prix-produit-catalogue"></p>
-                    <h3 class="libelle-produit-cataloguge">2 1/2 dans le coeur du Plateau-Montreal</h3>
-                    <a href="page-produit.html" class="voir-produit">Voir le produit</a>
-                </div>
-            </div>
-            <div class="div-produit row col-m-6 col-lg-4">
-                <div class="col-12 ">
-                    <img src="images/appartements/appartement_1.jpg" alt="" class="img-produit-catalogue">
-                </div>
-                <div class="col-12 description-prod-catalogue">
-                    <p class="prix-produit-catalogue"></p>
-                    <h3 class="libelle-produit-cataloguge">2 1/2 dans le coeur du Plateau-Montreal</h3>
-                    <a href="page-produit.html" class="voir-produit">Voir le produit</a>
+        <section name="appartements" class="row col-lg-9" id="appartements">
+            <div class="div-produit-conteneur row col-m-6 col-lg-4">
+                <div class="div-produit row">
+                    <div class="col-12 ">
+                        <img src="images/appartements/appartement_1.jpg" alt="" class="img-produit-catalogue">
+                    </div>
+                    <div class="col-12 description-prod-catalogue">
+                        <p class="prix-produit-catalogue"></p>
+                        <h3 class="libelle-produit-cataloguge">2 1/2 dans le coeur du Plateau-Montreal</h3>
+                        <a href="page-produit.html" class="voir-produit">Voir le produit</a>
+                    </div>
                 </div>
             </div>
-            <div class="div-produit row col-m-6 col-lg-4">
-                <div class="col-12 ">
-                    <img src="images/appartements/appartement_1.jpg" alt="" class="img-produit-catalogue">
-                </div>
-                <div class="col-12 description-prod-catalogue">
-                    <p class="prix-produit-catalogue"></p>
-                    <h3 class="libelle-produit-cataloguge">2 1/2 dans le coeur du Plateau-Montreal</h3>
-                    <a href="page-produit.html" class="voir-produit">Voir le produit</a>
-                </div>
-            </div>
-        </section>
-        <section name="maisons" id="maisons">
-            <div class="div-produit row col-m-6 col-lg-4">
-                <div class="col-12">
-                    <img src="images/appartements/appartement_2.jpg" alt="" class="img-produit-catalogue">
-                </div>
-                <div class="col-12 description-prod-catalogue">
-                    <p class="prix-produit-catalogue"></p>
-                    <h3 class="libelle-produit-cataloguge">1 1/2 proche metro Jean-Talon</h3>
-                    <a href="page-produit.html" class="voir-produit">Voir le produit</a>
+            <div class="div-produit-conteneur row col-m-6 col-lg-4">
+                <div class="div-produit row">
+                    <div class="col-12 ">
+                        <img src="images/appartements/appartement_1.jpg" alt="" class="img-produit-catalogue">
+                    </div>
+                    <div class="col-12 description-prod-catalogue">
+                        <p class="prix-produit-catalogue"></p>
+                        <h3 class="libelle-produit-cataloguge">2 1/2 dans le coeur du Plateau-Montreal</h3>
+                        <a href="page-produit.html" class="voir-produit">Voir le produit</a>
+                    </div>
                 </div>
             </div>
-            <div class="div-produit row col-m-6 col-lg-4">
-                <div class="col-12">
-                    <img src="images/appartements/appartement_2.jpg" alt="" class="img-produit-catalogue">
-                </div>
-                <div class="col-12 description-prod-catalogue">
-                    <p class="prix-produit-catalogue"></p>
-                    <h3 class="libelle-produit-cataloguge">1 1/2 proche metro Jean-Talon</h3>
-                    <a href="page-produit.html" class="voir-produit">Voir le produit</a>
-                </div>
-            </div>
-            <div class="div-produit row col-m-6 col-lg-4">
-                <div class="col-12">
-                    <img src="images/appartements/appartement_2.jpg" alt="" class="img-produit-catalogue">
-                </div>
-                <div class="col-12 description-prod-catalogue">
-                    <p class="prix-produit-catalogue"></p>
-                    <h3 class="libelle-produit-cataloguge">1 1/2 proche metro Jean-Talon</h3>
-                    <a href="page-produit.html" class="voir-produit">Voir le produit</a>
+            <div class="div-produit-conteneur row col-m-6 col-lg-4">
+                <div class="div-produit row">
+                    <div class="col-12 ">
+                        <img src="images/appartements/appartement_1.jpg" alt="" class="img-produit-catalogue">
+                    </div>
+                    <div class="col-12 description-prod-catalogue">
+                        <p class="prix-produit-catalogue"></p>
+                        <h3 class="libelle-produit-cataloguge">2 1/2 dans le coeur du Plateau-Montreal</h3>
+                        <a href="page-produit.html" class="voir-produit">Voir le produit</a>
+                    </div>
                 </div>
             </div>
         </section>
+        <section name="maisons" id="maisons" class="row col-lg-9">
+            <div class="div-produit-conteneur row col-m-6 col-lg-4">
+                <div class="div-produit row">
+                    <div class="col-12 ">
+                        <img src="images/appartements/appartement_2.jpg" alt="" class="img-produit-catalogue">
+                    </div>
+                    <div class="col-12 description-prod-catalogue">
+                        <p class="prix-produit-catalogue"></p>
+                        <h3 class="libelle-produit-cataloguge">1 1/2 proche metro Jean-Talon</h3>
+                        <a href="page-produit.html" class="voir-produit">Voir le produit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="div-produit-conteneur row col-m-6 col-lg-4">
+                <div class="div-produit row">
+                    <div class="col-12 ">
+                        <img src="images/appartements/appartement_2.jpg" alt="" class="img-produit-catalogue">
+                    </div>
+                    <div class="col-12 description-prod-catalogue">
+                        <p class="prix-produit-catalogue"></p>
+                        <h3 class="libelle-produit-cataloguge">1 1/2 proche metro Jean-Talon</h3>
+                        <a href="page-produit.html" class="voir-produit">Voir le produit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="div-produit-conteneur row col-m-6 col-lg-4">
+                <div class="div-produit row">
+                    <div class="col-12 ">
+                        <img src="images/appartements/appartement_2.jpg" alt="" class="img-produit-catalogue">
+                    </div>
+                    <div class="col-12 description-prod-catalogue">
+                        <p class="prix-produit-catalogue"></p>
+                        <h3 class="libelle-produit-cataloguge">1 1/2 proche metro Jean-Talon</h3>
+                        <a href="page-produit.html" class="voir-produit">Voir le produit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="div-produit-conteneur row col-m-6 col-lg-4">
+                <div class="div-produit row">
+                    <div class="col-12 ">
+                        <img src="images/appartements/appartement_2.jpg" alt="" class="img-produit-catalogue">
+                    </div>
+                    <div class="col-12 description-prod-catalogue">
+                        <p class="prix-produit-catalogue"></p>
+                        <h3 class="libelle-produit-cataloguge">1 1/2 proche metro Jean-Talon</h3>
+                        <a href="page-produit.html" class="voir-produit">Voir le produit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="div-produit-conteneur row col-m-6 col-lg-4">
+                <div class="div-produit row">
+                    <div class="col-12 ">
+                        <img src="images/appartements/appartement_2.jpg" alt="" class="img-produit-catalogue">
+                    </div>
+                    <div class="col-12 description-prod-catalogue">
+                        <p class="prix-produit-catalogue"></p>
+                        <h3 class="libelle-produit-cataloguge">1 1/2 proche metro Jean-Talon</h3>
+                        <a href="page-produit.html" class="voir-produit">Voir le produit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="div-produit-conteneur row col-m-6 col-lg-4">
+                <div class="div-produit row">
+                    <div class="col-12 ">
+                        <img src="images/appartements/appartement_2.jpg" alt="" class="img-produit-catalogue">
+                    </div>
+                    <div class="col-12 description-prod-catalogue">
+                        <p class="prix-produit-catalogue"></p>
+                        <h3 class="libelle-produit-cataloguge">1 1/2 proche metro Jean-Talon</h3>
+                        <a href="page-produit.html" class="voir-produit">Voir le produit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside id="asideIndex" class="col-m-12 col-lg-3 noshow">
+            <h3>Les tendances</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur deleniti dignissimos
+                dolore doloribus ducimus eaque exercitationem fugit iusto minima minus nisi numquam pariatur, quam
+                quasi, quidem quos repellendus similique!</p>
+        </aside>
     </div>
 </main>
 <footer>
@@ -195,7 +258,7 @@
     // script pour masquer et afficher le menu mobile
     $(document).ready(function () {
         $('#menu-hamburger').click(function () {
-            $('nav ul').toggleClass('noshow');
+            $('#menu-principal ul').toggleClass('noshow');
         });
     });
 </script>

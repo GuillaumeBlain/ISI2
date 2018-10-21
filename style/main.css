@@ -129,7 +129,7 @@ header{
     display:none;
 }
 
-nav ul{
+#menu-principal ul{
     list-style:none;
     padding:0;
     color: white;
@@ -137,15 +137,14 @@ nav ul{
     margin:0;
 }
 
-nav ul li{
+#menu-principal ul li{
     border-top:1px solid lightgrey;
     display:block;
     height:50px;
-    width: 100%;
     line-height:50px;
 }
 
-nav ul li a{
+#menu-principal ul li a{
     color: black;
     text-decoration:none;
     text-transform:uppercase;
@@ -156,11 +155,20 @@ nav ul li a{
     font-size: 12px;
 }
 
-nav ul li a:hover{
+#menu-principal ul li a:hover{
     border-left: solid red 3px;
     background-color: #f5f5f5;
     color: red;
     text-shadow: 1px 2px #c5c5c5;
+}
+
+#menu-principal ul li a:active{
+    background-color: black;
+    color:white;
+}
+
+#menu-principal ul li a:visited{
+    color: grey;
 }
 
 /**************** MAIN **************/
@@ -554,7 +562,47 @@ input[type=checkbox] {
 /*****************CATALOGUE*****************/
 
 
+#tri{
+    text-align: center;
+}
+
+#tri ul{
+    list-style:none;
+    text-decoration: none;
+    padding:0;
+    height: 30px;
+}
+
+#tri ul li{
+    display: inline-block;
+    margin: 0 30px;
+}
+
+#tri ul li a{
+    text-decoration: none;
+    text-align: center;
+    padding:10px;
+    height: 100%;
+    border: 1px solid #f53e24;
+    border-radius: 20px;
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+}
+
+#tri ul li a:hover{
+    background-color: black;
+    color: white;
+}
+
+#tri ul li a:active{
+    background-color: #f53e24;
+    border-color: black;
+    color: grey;
+}
+
 .voir-produit{
+    display: inline-block;
     font-size: 1em;
     font-weight: bold;
     text-decoration: none;
@@ -599,9 +647,7 @@ input[type=checkbox] {
     border-radius: 20px;
 }
 
-.div-produit:hover{
 
-}
 
 .img-produit-catalogue{
     width:100%;
@@ -623,8 +669,8 @@ input[type=checkbox] {
     padding: 10px 0;
     color: black;
 }
-.voir-produit{
-}
+
+
 
 
 /**************** PAGE PRODUIT **************/
@@ -947,16 +993,16 @@ footer #footer_mobile_tablette div ul li a:hover{
         margin: auto auto;
     }
 
-    nav ul li:first-of-type{
+    #menu-principal ul li:first-of-type{
         display: flex;
     }
-    nav ul li{
+    #menu-principal ul li{
         text-align: center;
         line-height: 60px;
         padding: 0;
     }
 
-    nav ul li a{
+    #menu-principal ul li a{
         font-size: 16px;
     }
 
@@ -1024,7 +1070,30 @@ footer #footer_mobile_tablette div ul li a:hover{
         box-shadow: 2px 2px 5px #f53e24;
     }
 
+
+
     /*************CATALOGUE*************/
+
+    .div-produit-conteneur{
+        padding:20px;
+        transition: padding 1s;
+    }
+
+    .div-produit-conteneur:hover{
+        padding:0 0 20px 0;
+    }
+
+    .div-produit {
+        padding: 15px;
+    }
+
+    #appartements, #maisons{
+        margin: 0;
+    }
+
+    .voir-produit{
+        margin-bottom: 10px;
+    }
 
 
 
@@ -1054,9 +1123,6 @@ footer #footer_mobile_tablette div ul li a:hover{
     .container_slider_aside{
         height:80%;
     }
-
-    /**************FORMULAIRE*************/
-
 
 }
 
