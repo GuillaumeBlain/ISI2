@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Sébastien Percia et Guillaume Blain" >
+        <meta name="title" content="ISI2RENT Location de logement - Appartement">
         <meta name="description" content="Location immobilier appartements maison à Montréal principalement" >
         <meta property="og:title" content="Accueil - isi2rent">
-        <meta property="og:image" content="test.jpg">
+        <meta property="og:image" content="logo.jpg">
         <meta property="og:url" content="isi2rent.projetisi.com/index.html">
         <meta property="og:site_name" content="isi2rent">
         <meta property="og:type" content="Location immobilier">
@@ -54,17 +55,17 @@
                     <ul class="slides_pdt">
                         <li id="slide1">
                             <div>
-                                <img src="images/appartements/appartement_1.jpg" alt="" />
+                                <img src="images/appartements/appartement_1.jpg" alt="appartement" />
                             </div>
                         </li>
                         <li id="slide2">
                             <div>
-                                <img src="images/appartements/appartement_2.jpg" alt="" />
+                                <img src="images/appartements/appartement_2.jpg" alt="appartement" />
                             </div>
                         </li>
                         <li id="slide3">
                             <div>
-                                <img src="images/appartements/appartement_3.jpg" alt="" />
+                                <img src="images/appartements/appartement_3.jpg" alt="appartement" />
                             </div>
                         </li>
                     </ul>
@@ -73,13 +74,13 @@
                         <li>
                             <a href="#slide1">
 
-                                <img src="images/appartements/appartement_1.jpg" /></a>
+                                <img src="images/appartements/appartement_1.jpg" alt="appartement"/></a>
                         </li>
                         <li>
-                            <a href="#slide2"><img src="images/appartements/appartement_2.jpg" /></a>
+                            <a href="#slide2"><img src="images/appartements/appartement_2.jpg" alt="appartement"/></a>
                         </li>
                         <li>
-                            <a href="#slide3"><img src="images/appartements/appartement_3.jpg" /></a>
+                            <a href="#slide3"><img src="images/appartements/appartement_3.jpg" alt="appartement"/></a>
                         </li>
                     </ul>
                 </div>
@@ -98,6 +99,8 @@
                                 Seulement 1 block de l’université Concordia, de la rue Sainte Catherine, de la station de Métro Guy Concordia, du quartier des affaires ...<br><br>
                                 Idéal pour les étudiants et les jeunes professionnels !<br>
                                 Avantages :
+
+                            </p>
                             <ul>
                             <li>TOUT EST INCLUS !</li>
                             <li> eau chaude, electricité, chauffage, AC, Wifi ...</li>
@@ -105,7 +108,6 @@
                             <li> 1 block de l'université de Concordia et du quartier des affaires</li>
                             <li> Metro, bus a proximité ... idéalement placé !
                         </ul>
-                            </p>
                         </div>
                     </div>
 
@@ -140,17 +142,23 @@
                 </div>
                 <button class="collapsible">+ A propos de nous</button>
                 <div class="content">
-                    <ul>
-                        <li><a href="#">Nous contacter</a></li>
-                        <li><a href="#">Politique de confidentialité</a></li>
-                        <li><a href="#">Termes et conditions</a></li>
-                        <li><a href="#">Plan du site</a></li>
-                    </ul>
+                    <div class="a-propos">
+                        <ul>
+                            <li itemprop="legalName">ISI2RENT</li>
+                        </ul>
+                        <ul itemprop="address" itemscope itemtype="http://schema.org/postalAddress">
+                            <li>255 Boul. Crémazie Est</li>
+                            <li>Montréal, QC H2M 1M2</li>
+                            <li>(514) 842-2426</li>
+                            <li>info@isi-mtl.com</li>
+                        </ul>
+                    </div>
                 </div>
                 <button class="collapsible">+ Nous suivre</button>
                 <div class="row content">
                     <div class="col-3 social_media"><a href="#"><img src="images/reseaux_sociaux/facebook.png" alt=""></a></div>
-                    <div class="col-3 social_media"><a href="#"><img src="images/reseaux_sociaux/instagram.png" alt=""></a></div>
+                    <div class="col-3 social_media"><a href="#"><img src="images/reseaux_sociaux/instagram.png" alt=""></a>
+                    </div>
                     <div class="col-3 social_media"><a href="#"><img src="images/reseaux_sociaux/twitter.png" alt=""></a></div>
                     <div class="col-3 social_media"><a href="#"><img src="images/reseaux_sociaux/youtube.png" alt=""></a></div>
                 </div>
@@ -169,22 +177,30 @@
                 </div>
                 <div class="col-lg-4 container_footer">
                     <h4>A propos de nous</h4>
-                    <div>
+                    <div class="a-propos" itemscope itemtype="http://schema.org/Organization">
                         <ul>
-                            <li><a href="#">Nous contacter</a></li>
-                            <li><a href="#">Politique de confidentialité</a></li>
-                            <li><a href="#">Termes et conditions</a></li>
-                            <li><a href="#">Plan du site</a></li>
+                            <li itemprop="legalName">ISI2RENT</li>
+                        </ul>
+                        <ul itemprop="address" itemscope itemtype="http://schema.org/postalAddress">
+
+                            <li itemprop="streetAddress">255 Boul. Crémazie Est</li>
+                            <li><span itemprop="addressLocality">Montréal</span>, <span itemprop="addressRegion">QC</span> <span itemprop="postalCode">H2M 1M2</span></li>
+                            <li itemprop="telephone">(514) 842-2426</li>
+                            <li itemprop="url">info@isi-mtl.com</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 container_footer">
                     <h4>Suivez nous</h4>
                     <div class="row">
-                        <div class="col-3 social_media"><a href="#"><img src="images/reseaux_sociaux/facebook.png" alt=""></a></div>
-                        <div class="col-3 social_media"><a href="#"><img src="images/reseaux_sociaux/instagram.png" alt=""></a></div>
-                        <div class="col-3 social_media"><a href="#"><img src="images/reseaux_sociaux/twitter.png" alt=""></a></div>
-                        <div class="col-3 social_media"><a href="#"><img src="images/reseaux_sociaux/youtube.png" alt=""></a></div>
+                        <div class="col-3 social_media"><a href="#"><img src="images/reseaux_sociaux/facebook.png" alt=""></a>
+                        </div>
+                        <div class="col-3 social_media"><a href="#"><img src="images/reseaux_sociaux/instagram.png" alt=""></a>
+                        </div>
+                        <div class="col-3 social_media"><a href="#"><img src="images/reseaux_sociaux/twitter.png" alt=""></a>
+                        </div>
+                        <div class="col-3 social_media"><a href="#"><img src="images/reseaux_sociaux/youtube.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
