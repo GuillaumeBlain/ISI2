@@ -680,6 +680,7 @@ input[type=checkbox] {
 
 #wrapper_pdt{
     min-height: 1140px;
+    width: 100%;
 }
 
 .container_pdt {
@@ -778,7 +779,7 @@ input[type=checkbox] {
 
 .tabs {
     position: relative;
-    min-height: 375px;
+    min-height: 600px;
     clear: right;
     background: white;
     top: 120px;
@@ -819,14 +820,20 @@ input[type=checkbox] {
     margin: 0 20px;
     background-color: #eeeeee;
 }
+
 [type=radio]:checked ~ label {
     background: #eeeeee;
     border-bottom: 1px solid white;
     z-index: 2;
 }
+
 [type=radio]:checked ~ label ~ .content_tab {
     z-index: 1;
     opacity: 1;
+}
+
+.tabs video {
+    width:100%;
 }
 
 /**************** FOOTER **************/
@@ -1095,7 +1102,15 @@ footer #footer_mobile_tablette div ul li a:hover{
         margin-bottom: 10px;
     }
 
+    /*PAGE PRODUIT*/
 
+    #wrapper_pdt{
+        min-height: 1300px;
+    }
+
+    .tabs {
+        min-height: 500px;
+    }
 
     /*FOOTER*/
     .collapsible{
@@ -1241,4 +1256,6 @@ footer #footer_mobile_tablette div ul li a:hover{
     .tabs{
         min-height: 500px;
     }
+
+
 }
