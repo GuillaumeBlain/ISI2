@@ -1237,8 +1237,14 @@ footer #footer_mobile_tablette div ul li a:hover{
     }
     .container_footer{
         padding:10px 40px;
-        border-right: 1px solid white;
+
     }
+
+    .container_footer:nth-of-type(2){
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+    }
+
 
     /****************FORMULAIRE*****************/
     .formGauche{
