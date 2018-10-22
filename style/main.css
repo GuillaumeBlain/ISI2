@@ -211,7 +211,7 @@ header{
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-    top: 40%;
+    top: 50%;
     margin: auto;
     position: relative;
 }
@@ -358,8 +358,8 @@ hr{
 .slide-button button{
     font-size: 1em;
     font-weight: bold;
-    height: 30px;
-    width: 40%;
+    height: 40px;
+    width: 50%;
     border-radius: 15px;
     color: #fff;
     background-color:#f53e24;
@@ -367,8 +367,9 @@ hr{
 }
 
 .container_slider_aside{
-    height:800px;
+    height:980px;
 }
+
 .nav{
     height: 100%;
 }
@@ -680,7 +681,7 @@ input[type=checkbox] {
 /*SLIDER PRODUITS*/
 
 #wrapper_pdt{
-    min-height: 1140px;
+    min-height: 1200px;
     width: 100%;
 }
 
@@ -780,7 +781,7 @@ input[type=checkbox] {
 
 .tabs {
     position: relative;
-    min-height: 600px;
+    min-height: 650px;
     clear: right;
     background: white;
     top: 120px;
