@@ -1271,6 +1271,11 @@ footer #footer_mobile_tablette div ul li a:hover{
         height: 400px;
     }
 
+    .description-prod-catalogue h3{
+        height: 50px;
+        line-height: 25px;
+    }
+
     /***************FOOTER*****************/
 
 }
